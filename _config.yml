@@ -119,6 +119,12 @@ defaults:
     values:
       layout             : post
       share              : true
+  - scope:               # Pages
+      path               : "_pages"
+      type               : pages
+    values:
+      layout             : page
+      share              : false
 
 
 # Reading Files
