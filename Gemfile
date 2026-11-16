@@ -34,7 +34,7 @@ gem "jekyll-sass-converter", "~> 2.2"
 # gem "jekyll-theme-hydeout"
 
 # So Simple - https://mmistakes.github.io/so-simple-theme/
-gem "jekyll-theme-so-simple"
+# gem "jekyll-theme-so-simple" # Using a custom, stripped down version of this theme, so the gem is not used.
 
 
 #--------------------------------------------------------
@@ -49,7 +49,7 @@ gem "jekyll-seo-tag" # , "~> 2.4" # The 2.4 comes from the project Gemspec
 
 # Create archive pages for categories, tags, etc.
 # https://github.com/jekyll/jekyll-archives
-gem "jekyll-archives"
+# gem "jekyll-archives"
 
 # GitHub-style emoji support.
 # https://github.com/jekyll/jemoji

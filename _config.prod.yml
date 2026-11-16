@@ -1,6 +1,6 @@
 # Variables just for the prod environment. These will override the variables in _config.yml when running jekyll build --config _config.yml,_config.prod.yml
-title                    : ""
-url                      : ""
+title                    : "Jesus Joshua 24:15"
+url                      : "https://www.jesusjoshua2415.com/"
 environment              : production
 
 # Sass/SCSS

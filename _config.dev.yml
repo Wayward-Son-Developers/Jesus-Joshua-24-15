@@ -1,6 +1,6 @@
 # Variables just for the development environment. These will override the variables in _config.yml when running jekyll serve --config _config.yml,_config.dev.yml
-title                    : " (Dev)"
-url                      : ""
+title                    : "Jesus Joshua 24:15 (Dev)"
+url                      : "https://dev.jesusjoshua2415.com/"
 environment              : development
 
 # Sass/SCSS

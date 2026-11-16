@@ -1,96 +1,209 @@
-# Themes
-# theme: jekyll-theme-so-simple
-# remote_theme: mmistakes/so-simple-theme
+# Theme Settings
+# https://github.com/mmistakes/so-simple-theme
+
+# theme                  : jekyll-theme-so-simple
+# remote_theme           : mmistakes/so-simple-theme
+skin                     : "/assets/css/skins/default.css"
 
 # Site settings
-locale: en-US
+locale                   : en-US
+title                    : "Jesus Joshua 24:15" # Redefined in _config.dev.yml and _config.prod.yml
+url                      : # Set in _config.dev.yml and _config.prod.yml
+baseurl                  : # the subpath of your site, e.g. "/blog"
+description              : "A Christian Rock band with a big heart for the Lord."
+logo                     : "/assets/res/header.gif" # path of site logo, e.g. "/images/logo.png"
+repository               : "Wayward-Son-Developers/Jesus-Joshua-24-15"
+read_time                : false # reading time estimates, e.g. true
+words_per_minute         : 200
 
-skin: "/assets/css/skins/default.css"
-title: "Jesus Joshua 24:15"
-description: "It really is the best."
-baseurl: # the subpath of your site, e.g. "/blog"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-logo: # path of site logo, e.g. "/images/logo.png"
-date_format: "%B %-d, %Y"
-read_time: # reading time estimates, e.g. true
-words_per_minute: # 200
+date_format              : "%d %b %Y" # "%d %b %Y %H:%M" if I want to include time later
+timezone                 : America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
 mathjax:
-  enable: # MathJax equations, e.g. true, false (default)
-  combo:  # "tex-svg" (default), "tex-mml-chtml", etc.: docs.mathjax.org/en/latest/web/components/combined.html
-  tags:  # "none", "ams" (default), "all"
+  enable                 : # MathJax equations, e.g. true, false (default)
+  combo                  :  # "tex-svg" (default), "tex-mml-chtml", etc.: docs.mathjax.org/en/latest/web/components/combined.html
+  tags                   :  # "none", "ams" (default), "all"
+
 google_fonts:
-  - name: "Source Sans Pro"
-    weights: "400,400i,700,700i"
-  - name: "Lora"
-    weights: "400,400i,700,700i"
-google_analytics: # Google Analytics id, e.g. "UA-NNNNNNNN-N"
-disqus:
-  shortname: # Disqus shortname, e.g. "my_disqus_shortname"
-twitter:
-  username: # site's Twitter username, e.g. "mmistakes"
+  - name                 : "Source Sans Pro"
+    weights              : "400,400i,700,700i"
+  - name                 : "Lora"
+    weights              : "400,400i,700,700i"
 
-# Liquid
-liquid:
-  error_mode: strict
+google_analytics         : # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 
-# Build settings
-permalink: /:categories/:title/
-markdown: kramdown
-feed:
-  path: atom.xml
-
-# Pagination - https://jekyllrb.com/docs/pagination/
-# paginate: 10
-# paginate_path: /page:num/
-
-# Search
 search_full_content: false # can have performance implications for large sites
 
-# Taxonomy pages
-# category_archive_path: "/categories/#"
-# tag_archive_path: "/tags/#"
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-paginate
-
-# Front Matter Defaults
-defaults:
-  # Posts defaults
-  - scope:
-      path: "_posts"
-      type: posts
-    values:
-      layout: post
-      share: true
+disqus:
+  shortname              : # Disqus shortname, e.g. "my_disqus_shortname"
 
 # Site Author
 author:
-  name:
-  picture:
-  email:
-  twitter:
+  name                   : "Jesus Joshua 24:15"
+  picture                : "/assets/res/header.gif"
+  email                  :
+  twitter                :
   links:
-    - title:
-      url:
-      icon:
+    - title              :
+      url                :
+      icon               :
 
 # Footer Links
 footer_links:
-  - title: Feed
-    url: atom.xml
-    icon: fas fa-rss-square
+  - title                : Feed
+    url                  : feed.xml
+    icon                 : fas fa-rss-square
+
+liquid:
+  error_mode             : strict
+
+encoding                 : "utf-8"
+markdown_ext             : "markdown,mkdown,mkdn,mkd,md"
+
+show_drafts              : false
+future                   : false
+
+# Conversion
+markdown                 : kramdown
+highlighter              : rouge
+lsi                      : false
+excerpt_separator        : <!--more-->
+incremental              : false
+
+
+# Markdown Processing - If GFM, https://kramdown.gettalong.org/quickref.html / https://github.com/kramdown/parser-gfm
+kramdown:
+  auto_ids               : true
+  entity_output          : as_char
+  footnote_nr            : 1
+  hard_wrap              : false
+  input                  : GFM
+  smart_quotes           : lsquo,rsquo,ldquo,rdquo
+  toc_levels             : 1..6
+
+
+# Sass/SCSS - https://github.com/jekyll/jekyll-sass-converter
+sass:
+  sass_dir               : _sass
+  # style: compressed # Defined in _config.dev.yml and _config.prod.yml; https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  quiet_deps             : true
+  silence_deprecations   : ['import']
+
+
+# HTML Compression https://jch.penibelst.de/
+# Put `compress_html: false` in the frontmatter to disable on an individual page/post.
+compress_html:
+  blanklines             : true
+  clippings              : all
+  comments               : all
+  ignore:
+    envs                 : [development]
+  profile                : false
+
+# permalink: /:categories/:title/
+
+# Collections
+collections:
+  pages:
+    output               : true
+    permalink            : /:title:output_ext
+  styleguide:            # Defined in _config.dev.yml and _config.prod.yml, keeping a sensible default just in case
+    output               : false
+
+
+# Front Matter Defaults
+defaults:
+  - scope:               # Posts
+      path               : "_posts"
+      type               : posts
+    values:
+      layout             : post
+      share              : true
+
+
+# Reading Files
+include:
+  - .htaccess
+#  - _pages - Don't put this here unless you want the directory to be processed twice
+exclude:
+  # Environment-specific configuration
+  - _config.dev.yml
+  - _config.prod.yml
+
+  # Build caches
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .jekyll-cache/
+  - .jekyll-metadata
+  - .sass-cache
+
+  # Development tooling
+  - .editorconfig
+  - .gitattributes
+  - .github/
+  - .gitignore
+  - .ruby-version
+  - .scripts/
+  - .vscode/
+
+  # OS Junk
+  - .DS_Store
+  - Thumbs.db
+
+  # Build dependencies
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+
+  # Repository documentation
+  - LICENSE.md
+  - README.md
+
+  # Deployment
+  - wrangler.toml
+
+# Plugins (previously gems, remove the un-used ones)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+#--------------------------------------------------------
+# Jekyll Plugins
+#--------------------------------------------------------
+
+# Search Engine Optimization metadata - https://github.com/jekyll/jekyll-seo-tag
+twitter:
+  username               : # The site's Twitter handle
+  card                   : # The site's default card type
+
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+
+og_image                 : # Open Graph/Twitter default site image
+og_image_alt             : # Alt text for Open Graph/Twitter default site image
+
+# For specifying social profiles - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : Organization # Person or Organization (defaults to Person)
+  name                   : "Jesus Joshua 24:15" # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+
+google_site_verification :
+bing_site_verification   :
+naver_site_verification  :
+yandex_site_verification :
+baidu_site_verification  :
+
+
+# Redirect old URLs after moving or renaming pages - https://github.com/jekyll/jekyll-redirect-from
+redirect_from:
+  json                  : false
+
+
+# Generate sitemap.xml - https://github.com/jekyll/jekyll-sitemap
+# Put `sitemap: false` in the frontmatter to disable on an individual page/post.
