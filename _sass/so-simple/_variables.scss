@@ -12,7 +12,7 @@ $xlarge: 1280px !default;
 $base-font-size: 16px !default;
 $min-vw: $small !default;
 $max-vw: $xlarge !default;
-$min-font-size: 16px !default;
+$min-font-size: 14px !default;
 $max-font-size: 18px !default;
 
 /* Calculate Modular Scale */
@@ -88,8 +88,8 @@ $main-max-width: $medium !default;
 $main-sidebar-max-width: $large !default;
 
 /* Site logo */
-$site-logo-width: 75px !default;
-$site-logo-height: 75px !default;
+$site-logo-width: 272px !default;
+$site-logo-height: 79px !default;
 
 /* Border radius */
 $border-radius: 0.25rem !default;

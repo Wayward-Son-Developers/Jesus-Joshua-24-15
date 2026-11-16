@@ -10,7 +10,7 @@ locale                   : en-US
 title                    : "Jesus Joshua 24:15" # Redefined in _config.dev.yml and _config.prod.yml
 url                      : # Set in _config.dev.yml and _config.prod.yml
 baseurl                  : # the subpath of your site, e.g. "/blog"
-description              : "A Christian Rock band with a big heart for the Lord."
+description              : "A Christian rock band with a big heart for the Lord."
 logo                     : "/assets/res/header.gif" # path of site logo, e.g. "/images/logo.png"
 repository               : "Wayward-Son-Developers/Jesus-Joshua-24-15"
 read_time                : false # reading time estimates, e.g. true

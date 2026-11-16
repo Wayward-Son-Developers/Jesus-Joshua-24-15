@@ -5,6 +5,12 @@
 body {
   color: $text-color;
   background: $background-color;
+  /* v BG Image from the OG site v */
+  background-image: url('background.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* ^ BG Image from OG site ^ */
   border-top-color: $nav-background-color;
 }
 
@@ -29,6 +35,11 @@ blockquote {
   a {
     color: $text-color;
   }
+}
+
+.masthead {
+  color: $nav-color;
+  background-color: $nav-background-color;
 }
 
 .copyright {
@@ -84,6 +95,8 @@ blockquote {
 
 .site-footer {
   border-top-color: $border-color;
+  color: $nav-color;
+  background-color: $nav-background-color;
 }
 
 .footnotes {
