@@ -1,5 +1,7 @@
 ---
 layout: page
+redirect_from:
+  - /default.asp
 ---
 
 ![Jesus Joshua 24:15](assets/res/home-image.jpg){: .align-center}

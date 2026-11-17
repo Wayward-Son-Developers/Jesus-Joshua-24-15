@@ -1,6 +1,8 @@
 ---
 title       : "About Jesus Joshua 24:15"
 description : "Short history of Jesus Joshua 24:15"
+redirect_from:
+  - /jj_about.asp
 ---
 
 ![Jesus Joshua 24:15](/assets/res/aboutphoto.gif){: .align-left} We play original Christian music usually classified as hard rock or Christian rock. Together since 1995, we are a three-piece band with a lead vocalist. We are currently in production on our third independent studio project. Our first CD is entitled The Time of my Return, recorded in 1997. We recorded this CD as a four-piece band with Jay Woody as lead vocalist. Our bass player left before the CD was released so we released it as a trio with Jay playing bass and doing most of the lead vocals. This project was recorded in a studio and while the production is less than perfect, overall this was a good start for a band only two years old. Our current set list includes several songs from The Time of my Return, and they are still just as powerful today as they were back then.

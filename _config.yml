@@ -104,6 +104,9 @@ compress_html:
 
 # Collections
 collections:
+  newsletter:
+    output               : true
+    permalink            : /newsletters/:year-:month:output_ext
   pages:
     output               : true
     permalink            : /:title:output_ext
@@ -113,6 +116,12 @@ collections:
 
 # Front Matter Defaults
 defaults:
+  - scope:               # Newsletter
+      path               : "_newsletter"
+      type               : newsletters
+    values:
+      layout             : page
+      share              : false
   - scope:               # Posts
       path               : "_posts"
       type               : posts
