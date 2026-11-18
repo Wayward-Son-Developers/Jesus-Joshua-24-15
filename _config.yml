@@ -50,9 +50,9 @@ author:
 
 # Footer Links
 footer_links:
-  - title                : Feed
-    url                  : feed.xml
-    icon                 : fas fa-rss-square
+  - title                :
+    url                  :
+    icon                 :
 
 liquid:
   error_mode             : strict

@@ -167,6 +167,10 @@ blockquote {
    Page
    ========================================================================== */
 
+.page-wrapper {
+  background-color: $background-color;
+}
+
 .page-previous,
 .page-next {
   color: $text-color;
