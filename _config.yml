@@ -49,10 +49,10 @@ author:
       icon               :
 
 # Footer Links
-footer_links:
-  - title                :
-    url                  :
-    icon                 :
+# footer_links:
+#   - title                :
+#     url                  :
+#     icon                 :
 
 liquid:
   error_mode             : strict

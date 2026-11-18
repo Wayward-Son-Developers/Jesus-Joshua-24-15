@@ -15,11 +15,16 @@ body {
 }
 
 a {
-  color: $accent-color;
+  //color: $accent-color;
 
-  &:hover {
-    color: shade($accent-color, 25%);
-  }
+  &:link			{ color:rgb(255,204,0); }
+  &:visited		{ color:rgb(255,255,153); }
+  &:active		{ color:rgb(255,51,0); }
+  &:hover		  { color:rgb(255,0,0); }
+
+  //&:hover {
+  //  color: shade($accent-color, 25%);
+  //}
 }
 
 blockquote {
@@ -44,9 +49,9 @@ blockquote {
 
 .copyright {
   color: lighten($text-color, 25%);
-  a {
+  /* a {
     color: lighten($text-color, 25%);
-  }
+  } */
 }
 
 .taxonomy-title {
@@ -169,6 +174,8 @@ blockquote {
 
 .page-wrapper {
   background-color: $background-color;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
 }
 
 .page-previous,

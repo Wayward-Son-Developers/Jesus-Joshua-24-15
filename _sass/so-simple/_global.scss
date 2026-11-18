@@ -69,6 +69,7 @@
   @include clearfix;
   // margin-bottom: 3em; // I want to remove the space between the logo and the link text
   text-align: center;
+  border-bottom: 2px solid;
 }
 
 .site-title {
@@ -93,7 +94,7 @@
 .site-logo {
   display: inline-block;
   position: relative;
-  margin-bottom: 0.5em;
+  margin: 1em 0;
   z-index: 10;
 }
 
@@ -121,9 +122,9 @@
 .site-footer {
   @include clearfix();
   margin-top: 2em;
-  padding: 2em 0;
+  padding: 0.5em 0;
   text-align: center;
-  border-top: 1px solid;
+  border-top: 2px solid;
 
   .social-icons {
     margin-bottom: 0.5em;
