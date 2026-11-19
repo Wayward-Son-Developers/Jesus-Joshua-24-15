@@ -119,9 +119,18 @@
 }
 */
 
+// v Adding as part of the adjustments to keep the footer at the bottom of the page reguardless of content
+#main {
+  flex: 1 0 auto;
+}
+
+#footer {
+  margin-top: 2em;
+}
+// ^ Adding as part of the adjustments to keep the footer at the bottom of the page reguardless of content
+
 .site-footer {
   @include clearfix();
-  margin-top: 2em;
   padding: 0.5em 0;
   text-align: center;
   border-top: 2px solid;

@@ -5,16 +5,16 @@
 body {
   color: $text-color;
   background: $background-color;
-  /* v BG Image from the OG site v */
+  // v Added to closer mimic the og site
   background-image: url('background.gif');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* ^ BG Image from OG site ^ */
+  // ^ Added to closer mimic the og site
   border-top-color: $nav-background-color;
 }
 
-a {
+a { // Added to closer mimic the og site
   //color: $accent-color;
 
   &:link			{ color:rgb(255,204,0); }
@@ -172,7 +172,7 @@ blockquote {
    Page
    ========================================================================== */
 
-.page-wrapper {
+#main {  // Added to closer mimic the og site
   background-color: $background-color;
   border-top: 2px solid;
   border-bottom: 2px solid;
