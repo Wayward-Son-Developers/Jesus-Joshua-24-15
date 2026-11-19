@@ -1,7 +1,7 @@
 ---
-title       : "About Jesus Joshua 24:15"
-description : "Short history of Jesus Joshua 24:15"
-redirect_from:
+title         : "About Jesus Joshua 24:15"
+description   : "Short history of Jesus Joshua 24:15"
+redirect_from :
   - /jj_about.asp
 ---
 
