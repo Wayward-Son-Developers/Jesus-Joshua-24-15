@@ -1,16 +1,20 @@
 # Sample Authors
 # Remove file or replace with your own
 
-Billy Rick:
-  name: Billy Rick
-  picture: /images/bio-photo-2.jpg
-  twitter: "@billyrick"
+Axeman2415:
+  name      : William Rauser
+  picture   :
+  twitter   :
   links:
-    - title: Twitter
-      url: https://twitter.com/billyrick
-      icon: fab fa-twitter-square
+    - title :
+      url   :
+      icon  :
 
-Cornelius Fiddlebone:
-  name: Cornelius Fiddlebone
-  picture: /images/bio-photo.jpg
-  twitter: corneliusfiddlebone
+User:
+  name      :
+  picture   :
+  twitter   :
+  links:
+    - title :
+      url   :
+      icon  :
