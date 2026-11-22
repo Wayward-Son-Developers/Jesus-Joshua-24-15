@@ -1,14 +1,22 @@
-# Sample Authors
-# Remove file or replace with your own
+# Site Authors
 
 Axeman2415:
-  name      : William Rauser
+  name      : "William Rauser"
   picture   :
   twitter   :
   links:
     - title :
       url   :
       icon  :
+
+AnonJr:
+  name      : "Mark Bussell Jr."
+  picture   : https://www.anonjr.com/assets/res/favicon.svg
+  twitter   : "@AnonJr"
+  links:
+    - title : "Personal Website"
+      url   : https://www.anonjr.com
+      icon  : fas fa-home
 
 User:
   name      :
@@ -18,3 +26,13 @@ User:
     - title :
       url   :
       icon  :
+
+# User Template
+# User:
+#   name      :
+#   picture   :
+#   twitter   :
+#   links:
+#     - title :
+#       url   :
+#       icon  :
