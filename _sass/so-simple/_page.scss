@@ -9,12 +9,12 @@
 }
 
 .page-title {
-  @include fluid-type($min-vw, $max-vw, 48px, 60px);
+  @include fluid-type($min-vw, $max-vw, $h1-min, $h1-max); // orig: @include fluid-type($min-vw, $max-vw, 48px, 60px);
   margin-bottom: 0.5em;
   font-family: $title-font-family;
   font-weight: $page-title-weight;
-  font-style: italic;
-  letter-spacing: -2px;
+  font-style: normal; // orig: italic;
+  letter-spacing: normal; // orig: -2px;
 }
 
 .page-image {
@@ -194,6 +194,48 @@
   font-family: $meta-font-family;
   font-size: 0.9rem;
   font-style: italic;
+}
+
+/*
+   Newsletter Layout Overrides
+   ========================================================================== */
+
+.layout--newsletter {
+  h2 {
+    color: yellow;
+  }
+
+  h3 {
+    color: red;
+  }
+
+  .page-content .page-header {
+    margin-bottom: 1.75em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid; // Optional, if you still want a subtle rule under the date/read-time
+  }
+
+  hr {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  code.language-tab {
+    display: block;
+    margin: 1.5em 0;
+    background-color: #242424;
+    color: #eeeeee;
+    border: 1px solid #444444;
+    border-radius: 4px;
+    padding: 1em 1.25em;
+    overflow-x: auto;
+    font-family: "Cascadia Mono", Consolas, SFMono-Regular, Menlo, "Courier New", monospace;
+    font-size: 0.9em;
+    line-height: 1.4;
+    white-space: pre;
+    tab-size: 4;
+  }
+
 }
 
 /*

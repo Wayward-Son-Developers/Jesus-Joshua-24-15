@@ -1,37 +1,31 @@
 # Site Authors
 
 Axeman2415:
-  name      : "William Rauser"
-  picture   :
-  twitter   :
-  links:
-    - title :
-      url   :
-      icon  :
+  name      : "Will Rauser"
+  picture   : /assets/res/Will-Avatar.png
 
 AnonJr:
   name      : "Mark Bussell Jr."
-  picture   : https://www.anonjr.com/assets/res/favicon.svg
-  twitter   : "@AnonJr"
+  picture   : /assets/res/AnonJr-Avatar.png
   links:
-    - title : "Personal Website"
+    - title : "AnonJr.com"
       url   : https://www.anonjr.com
       icon  : fas fa-home
+    - title : "Bible By Example"
+      url   : https://www.biblebyexample.com
+      icon  : fas fa-bible
+    - title : "Wayward Son Developers"
+      url   : https://www.waywardsondevelopers.com
+      icon  : fas fa-file-code
 
-User:
-  name      :
-  picture   :
-  twitter   :
-  links:
-    - title :
-      url   :
-      icon  :
+"jim@souljoyrecords" :
+  name      : "Jim Bishop"
+  picture   : /assets/res/photo_none.gif
 
 # User Template
 # User:
 #   name      :
 #   picture   :
-#   twitter   :
 #   links:
 #     - title :
 #       url   :

@@ -16,11 +16,11 @@ repository               : "Wayward-Son-Developers/Jesus-Joshua-24-15"
 read_time                : false # reading time estimates, e.g. true
 words_per_minute         : 200
 
-date_format              : "%d %b %Y" # "%d %b %Y %H:%M" if I want to include time later
+date_format              : "%d %b %Y %H:%M" # "%d %b %Y %H:%M" if I want to include time later
 timezone                 : America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 google_fonts:
-  - name                 : "Lora"
+  - name                 : "Cascadia Mono"
     weights              : "400,400i,700,700i"
 
 google_analytics         : # Google Analytics id, e.g. "UA-NNNNNNNN-N"
@@ -115,6 +115,8 @@ defaults:
     values:
       layout             : post
       share              : false
+      classes:
+        - layout--newsletter
   - scope:               # Posts
       path               : "_posts"
       type               : posts
