@@ -189,8 +189,9 @@
   .page-content .page-header {
     margin-bottom: 1.75em;
     padding-bottom: 1em;
-    border-bottom: 1px solid; // Optional, if you still want a subtle rule under the date/read-time  .page-date,
+    border-bottom: 1px solid; // Optional, if you still want a subtle rule under the date/read-time
 
+    .page-date,
     .read-time {
         font-family: $meta-font-family;
         // orig: font-style: italic;
@@ -221,7 +222,6 @@
 
   code.language-tab {
     display: block;
-    margin: 1.5em 0;
     background-color: #242424;
     color: #eeeeee;
     border: 1px solid #444444;
@@ -229,9 +229,9 @@
     padding: 1em 1.25em;
     overflow-x: auto;
     font-family: "Cascadia Mono", Consolas, SFMono-Regular, Menlo, "Courier New", monospace;
-    font-size: 0.9em;
-    line-height: 1.4;
-    white-space: pre;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
     tab-size: 4;
   }
 

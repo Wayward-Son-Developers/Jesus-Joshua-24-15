@@ -21,7 +21,8 @@ timezone                 : America/New_York # https://en.wikipedia.org/wiki/List
 
 google_fonts:
   - name                 : "Cascadia Mono"
-    weights              : "400,400i,700,700i"
+    weights              : "200..700"
+    italic               : false
 
 google_analytics         : # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 
