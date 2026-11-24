@@ -6,13 +6,20 @@
   margin-right: 1em;
   width: 50px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 25%; // orig: 50%;
 
   @include breakpoint($large) {
     margin-right: 0;
     margin-bottom: 1em;
     width: 100px;
     height: auto;
+  }
+}
+
+.author-pubname {
+  @include breakpoint($large) {
+    margin-bottom: 0.8em;
+    border-bottom: 1px solid;
   }
 }
 
@@ -29,7 +36,7 @@
   list-style: none;
 
   @include breakpoint($large) {
-    display: block;
+    display: inline-block; // orig: display: block;
   }
 }
 
@@ -37,9 +44,11 @@
   display: inline;
   padding-right: 0.5em;
 
+  /*
   @include breakpoint($large) {
     padding: 0.25em;
   }
+  */
 
   a {
     text-decoration: none;
