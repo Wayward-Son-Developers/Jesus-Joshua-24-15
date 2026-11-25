@@ -30,29 +30,40 @@
     {% assign font_families = "" %}
 
     {% for font in site.google_fonts %}
-      {% capture font_family %}
-        {{ font.name | replace: ' ', '+' }}{% if font.weights %}:wght@{{ font.weights | remove: ' ' }}{% endif %}
-      {% endcapture %}
+      {% assign font_name = font.name | replace: ' ', '+' | prepend: 'family=' %}
+      {% assign raw_weights = font.weights | remove: ' ' %}
 
+      {% assign has_italic = false %}
       {% if font.italic %}
-        {% capture font_family %}
-          {{ font.name | replace: ' ', '+' }}:ital,wght@0,{{ font.weights | remove: ' ' }};1,{{ font.weights | remove: ' ' }}
-        {% endcapture %}
+        {% assign has_italic = true %}
       {% endif %}
 
-      {% assign font_family = font_family | strip %}
+      {% assign has_weights = false %}
+      {% if raw_weights and raw_weights != "" %}
+        {% assign has_weights = true %}
+      {% endif %}
 
-      {% if forloop.first %}
+      {% if has_italic and has_weights %}
+        {% assign font_family = font_name | append: ':ital,wght@0,' | append: raw_weights | append: ';1,' | append: raw_weights %}
+      {% elsif has_italic %}
+        {% assign font_family = font_name | append: ':ital@0;1' %}
+      {% elsif has_weights %}
+        {% assign font_family = font_name | append: ':wght@' | append: raw_weights %}
+      {% else %}
+        {% assign font_family = font_name %}
+      {% endif %}
+
+      {% if font_families == "" %}
         {% assign font_families = font_family %}
       {% else %}
-        {% assign font_families = font_families | append: '&family=' | append: font_family %}
+        {% assign font_families = font_families | append: '&' | append: font_family %}
       {% endif %}
     {% endfor %}
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={{ font_families }}&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?{{ font_families }}&display=swap">
     <!-- End Google Fonts -->
   {% endif %}
 
