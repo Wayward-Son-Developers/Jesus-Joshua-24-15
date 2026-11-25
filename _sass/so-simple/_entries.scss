@@ -8,6 +8,12 @@
 
   a {
     color: inherit;
+
+    // v Moved from the old _skin.scss file
+    &:hover {
+      color: $accent-color;
+    }
+    // ^ Moved from the old _skin.scss file
   }
 }
 

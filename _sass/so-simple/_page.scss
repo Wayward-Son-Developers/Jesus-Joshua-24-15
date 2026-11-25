@@ -148,6 +148,7 @@
   -ms-flex: 1;
   flex: 1;
   text-decoration: none;
+  color: $text-color; // Moved from the old _skin.scss file
 }
 
 .page-next {

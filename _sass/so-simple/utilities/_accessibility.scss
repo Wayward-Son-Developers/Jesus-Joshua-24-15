@@ -12,6 +12,7 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
   overflow: hidden;
+  background-color: $base-color; // Moved from the old _skin.scss file
 
   &:focus {
     display: block;

@@ -17,6 +17,10 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  // v Moved from the old _skin.scss file
+  color: $nav-color;
+  background-color: $nav-background-color;
+  // ^ Moved from the old _skin.scss file
 
   @include breakpoint($medium) {
     display: none;
@@ -34,6 +38,10 @@
     padding: 0.25em 0.75em;
     list-style: none;
     border-radius: 0 0 (2 * $border-radius) (2 * $border-radius);
+    // v Moved from the old _skin.scss file
+    color: $nav-color;
+    background-color: $nav-background-color;
+    // ^ Moved from the old _skin.scss file
 
     @include breakpoint($medium) {
       display: inline-block;
@@ -52,6 +60,14 @@
     text-decoration: none;
     border: 1px solid;
     border-radius: $border-radius;
+    // v Moved from the old _skin.scss file
+    color: $nav-color;
+    border-color: $nav-background-color;
+
+    &:hover {
+      border-color: $nav-color;
+    }
+    // ^ Moved from the old _skin.scss file
   }
 
   @include breakpoint($medium) {
@@ -70,6 +86,10 @@
   // margin-bottom: 3em; // I want to remove the space between the logo and the link text
   text-align: center;
   border-bottom: 2px solid;
+  // v Moved from the old _skin.scss file
+  color: $nav-color;
+  background-color: $nav-background-color;
+  // ^ Moved from the old _skin.scss file
 }
 
 .site-title {
@@ -80,6 +100,7 @@
 
   a {
     text-decoration: none;
+    color: $text-color; // Moved from the old _skin.scss file
   }
 }
 
@@ -98,12 +119,13 @@
   z-index: 10;
 }
 
-/*
+/* Don't want the alterations to the logo image
 .site-logo-img {
   width: $site-logo-width;
   height: $site-logo-height;
   border: 5px solid;
   border-radius: $site-logo-width;
+  border-color: $background-color; // Moved from the old _skin.scss file
 
   @include breakpoint($medium) {
     width: 1.5 * $site-logo-width;
@@ -122,6 +144,11 @@
 // v Adding as part of the adjustments to keep the footer at the bottom of the page reguardless of content
 #main {
   flex: 1 0 auto;
+  // v Added to closer mimic the og site
+  background-color: $background-color;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  // ^ Added to closer mimic the og site
 }
 
 #footer {
@@ -134,6 +161,11 @@
   padding: 0.5em 0;
   text-align: center;
   border-top: 2px solid;
+  // v Moved from the old _skin.scss file
+  border-top-color: $border-color;
+  color: $nav-color;
+  background-color: $nav-background-color;
+  // ^ Moved from the old _skin.scss file
 
   .social-icons {
     margin-bottom: 0.5em;
@@ -147,6 +179,12 @@
 
 .copyright {
   font-size: 0.75rem;
+  // v Moved from the old _skin.scss file
+  color: lighten($text-color, 25%);
+  /* a {
+    color: lighten($text-color, 25%);
+  } */
+  // ^ Moved from the old _skin.scss file
 
   p {
     margin: 0;
@@ -159,6 +197,7 @@
   padding-top: 1rem;
   border-top: 1px solid;
   font-size: 0.75rem;
+  border-top-color: $border-color; // Moved from the old _skin.scss file
 }
 
 .more-link {
@@ -172,6 +211,7 @@
   text-transform: uppercase;
   text-align: right;
   text-decoration: none;
+  color: lighten($text-color, 50%); // Moved from the old _skin.scss file
 }
 
 .taxonomy-section {
@@ -180,6 +220,7 @@
 
   &:not(:last-child) {
     border-bottom: solid 1px;
+    border-bottom-color: $border-color; // Moved from the old _skin.scss file
   }
 
   + .taxonomy-section {
@@ -191,7 +232,14 @@
   @include fluid-type($min-vw, $max-vw, 28px, 32px);
   margin-bottom: 0.5em;
   font-family: $base-font-family;
+  color: lighten($text-color, 60%); // Moved from the old _skin.scss file
 }
+
+// v Moved from the old _skin.scss file
+.taxonomy-count {
+  color: lighten($text-color, 50%);
+}
+// ^ Moved from the old _skin.scss file
 
 .taxonomy-index {
   display: grid;
@@ -218,6 +266,13 @@
     color: inherit;
     text-decoration: none;
     border-bottom: 1px solid;
+    // v Moved from the old _skin.scss file
+    border-bottom-color: $border-color;
+
+    &:hover {
+      color: $accent-color;
+    }
+    // ^ Moved from the old _skin.scss file
   }
 
   + .taxonomy-section {
@@ -255,10 +310,20 @@
       text-decoration: none;
       border: 1px solid;
       border-radius: 0;
+      // v Moved from the old _skin.scss file
+      color: mix($text-color, $border-color, 50%);
+      border-color: $border-color;
+
+      &.current,
+      &.current.disabled {
+        @include yiq-contrasted(mix($text-color, $border-color, 50%));
+      }
+      // ^ Moved from the old _skin.scss file
 
       &.disabled {
         pointer-events: none;
         cursor: not-allowed;
+        color: $border-color; // Moved from the old _skin.scss file
       }
     }
 
@@ -287,6 +352,7 @@
   font-size: 0.9rem;
   border: 2px solid;
   border-radius: $border-radius;
+  border-color: $border-color; // Moved from the old _skin.scss file
 }
 
 .toc-wrapper {
@@ -294,6 +360,7 @@
   margin-bottom: 1.5em;
   border: 1px solid;
   border-radius: $border-radius;
+  border-color: mix(#fff, $border-color, 25%); // Moved from the old _skin.scss file
 
   h2 {
     display: -webkit-box;
@@ -311,6 +378,10 @@
     font-size: 0.75rem;
     text-transform: uppercase;
     cursor: pointer;
+    // v Moved from the old _skin.scss file
+    color: $base05;
+    background-color: $base00;
+    // ^ Moved from the old _skin.scss file
 
     .toc-toggle-icon {
       margin-left: 1rem;
@@ -338,6 +409,7 @@
     font-size: 0.9rem;
     -webkit-transition: height 350ms ease;
     transition: height 350ms ease;
+    color: $base05; // Moved from the old _skin.scss file
 
     &.js-toc-is-open {
       display: block;
@@ -356,11 +428,18 @@
       font-weight: 600;
       text-decoration: none;
       border-bottom: 1px dotted transparent;
+      // v Moved from the old _skin.scss file
+      &:hover,
+      &:focus {
+        border-bottom: 1px dotted $border-color;
+      }
+      // ^ Moved from the old _skin.scss file
     }
 
     ol {
       padding-left: 0.5rem;
       list-style-type: lower-roman;
+      background-color: $background-color; // Moved from the old _skin.scss file
     }
   }
 }

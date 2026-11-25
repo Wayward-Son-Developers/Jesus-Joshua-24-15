@@ -8,8 +8,20 @@ html {
 }
 
 body {
-  // border-top: solid 0.25em;
+  // v Moved from the old _skin.scss file
+  color: $text-color;
+  background: $background-color;
+  border-top-color: $nav-background-color;
+  // ^ Moved from the old _skin.scss file
 
+  // v Added to closer mimic the og site
+  background-image: url('background.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  // ^ Added to closer mimic the og site
+
+  // border-top: solid 0.25em;
   // v Adding as part of the adjustments to keep the footer at the bottom of the page reguardless of content
   min-height:100vh;
   display:flex;
@@ -31,6 +43,13 @@ q {
     }
   }
 }
+
+// v Moved from the old _skin.scss file
+blockquote {
+  background-color: mix($background-color, $accent-color, 90%);
+  border-left-color: $accent-color;
+}
+// ^ Moved from the old _skin.scss file
 
 code,
 kbd,
@@ -111,4 +130,19 @@ figcaption {
 a {
   -webkit-transition: $global-transition;
   transition: $global-transition;
+
+  // v Moved from the old _skin.scss file
+
+  //color: $accent-color;
+
+  &:link			{ color:rgb(255,204,0); }   // Added to closer mimic the og site
+  &:visited		{ color:rgb(255,255,153); } // Added to closer mimic the og site
+  &:active		{ color:rgb(255,51,0); }    // Added to closer mimic the og site
+  &:hover		  { color:rgb(255,0,0); }     // Added to closer mimic the og site
+
+  //&:hover {
+  //  color: shade($accent-color, 25%);
+  //}
+
+  // ^ Moved from the old _skin.scss file
 }

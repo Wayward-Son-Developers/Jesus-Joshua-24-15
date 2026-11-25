@@ -15,6 +15,7 @@ table {
 th,
 td {
   border-bottom: 1px solid;
+  border-bottom-color: $border-color; // Moved from the old _skin.scss file
 }
 
 th {
